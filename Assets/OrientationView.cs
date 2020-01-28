@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.iOS;
 using TMPro;
 
 public class OrientationView : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI textField = null;
+    private TextMeshProUGUI orientation = null;
+
+    [SerializeField]
+    private TextMeshProUGUI device = null;
+
+    private void Awake()
+    {
+        device.text = Device.generation.ToString();
+    }
 
     private void Update()
     {
-        textField.text = Input.deviceOrientation.ToString();
+        orientation.text = Input.deviceOrientation.ToString();
     }
 }

@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/OrientationTest.unity
+    guid: 6f6173e6e6ea2c34686e4417b97d622e
   m_configObjects: {}
